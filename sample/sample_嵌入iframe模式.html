@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Iframe嵌入播放——UtoVR</title>
+    <meta name="keywords" content="全景视频，全景视频播放器，全景视频下载，全景视频片源，UtoVR片源，全景视频拍摄，全景视频拼合，全景视频制作">
+    <meta name="description" content="本站是国内最专业的全景视频平台。提供高清全景视频片源下载、在线浏览全景视频内容。也提供全景视频拍摄、全景视频拼合，全景视频制作，全景视频解决方案。">
+    <style type="text/css">
+        html body {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .fullDom {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            overflow-y: auto;
+        }
+
+        .ModuleTop {
+            position: relative;
+            width: 100%;
+            height: 320px;
+        }
+
+        .iframeDom {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="fullDom">
+    <h1>播放器嵌入Iframe测试</h1>
+    <div class="full">下面的播放页面是利用iframe嵌入的，由于视频部署的原因，很多网站或者是论坛需要采用该种方式进行部署。根据用户的反馈，特意整理一个iframe嵌入的案例。</div>
+    <h2>如下：移动端点击开始播放</h2>
+    <div class="ModuleTop" id="ModuleTop">
+        <!--这里是配置在cdn的播放页面player_message-->
+        <iframe style="width: 100%;height:100%;" class="iframeDom" src="./sample_配置禁止缩放.html" frameborder="0"
+                allowfullscreen></iframe>
+        <!--这个是使用iframe 嵌入播放 ，播放页面无法获取到陀螺仪数据的插件-->
+        <script language="javascript" type="text/javascript" src="./player/plugin/gyro/gyroHelp.js"></script>
+    </div>
+    <div class="contentDom">
+        <h1>下面是sdk常见问题：</h1>
+        <article class="markdown-body"><h2 id="utovr_websdk-配置的常见问题" data-source-line="2"><a class="markdownIt-Anchor"
+                                                                                             href="#utovr_websdk-配置的常见问题"></a>UtoVR_WebSDK
+            配置的常见问题</h2>
+            <h5 id="注意文档仅针对于utovr_websdk-有效该文档暂时不涉及-utovr_iossdk-和-utovr_androidsdk-内容-文档中所列出的sdk-就默认代表-utovr_websdk"
+                data-source-line="4"><a class="markdownIt-Anchor"
+                                        href="#注意文档仅针对于utovr_websdk-有效该文档暂时不涉及-utovr_iossdk-和-utovr_androidsdk-内容-文档中所列出的sdk-就默认代表-utovr_websdk"></a>注意：文档仅针对于UtoVR_webSDK
+                有效，该文档暂时不涉及 UtoVR_IosSDK 和 UtoVR_AndroidSDK 内容。 文档中所列出的“SDK” 就默认代表 UtoVR_webSDK</h5>
+            <p data-source-line="7">UtoVR_WebSDK :是一款全景视频播放器，可以在不同的终端自动切换flash和H5模式，目前默认优先H5 模式进行播放，可同时在PC，Android，IOS
+                的浏览器环境中运行。</p>
+            <p data-source-line="9">UtoVR_WebSDk是在浏览器环境中运行的，而浏览器目前也是百花齐放的状态，所以目前SDK也存在一定的兼容问题！</p>
+            <p data-source-line="12">
+                根据用户反馈的问题和建议，我们对相关问题进行整理，包括SDK的下载，使用和配置相关，如果您已经找到了这份文档，或许您已经开始使用SDK了，这里还是把SDK的下载地址给分享下，如果是偶然遇到我也可以先来了解了解</p>
+            <p data-source-line="16">【UtoVR_WebSDK 官网地址】</p>
+            <p data-source-line="18"><a href="http://www.utovr.com">http://www.utovr.com</a></p>
+            <p data-source-line="20">【UtoVR官网 SDK下载地址 】</p>
+            <p data-source-line="22"><a href="http://www.utovr.com/sdk/download/">http://www.utovr.com/sdk/download/</a>
+            </p>
+            <p data-source-line="24">【UtoVR官方 论坛地址】</p>
+            <p data-source-line="26"><a href="http://bbs.utovr.com/forum.php?mod=forumdisplay&amp;fid=49">http://bbs.utovr.com/forum.php?mod=forumdisplay&amp;fid=49</a>
+            </p>
+            <p data-source-line="28">【UtoVR_WebSDK 配置参数和接口API列表】</p>
+            <p data-source-line="30"><a
+                    href="http://note.youdao.com/noteshare?id=fd0b710c07ee0b207966324ec021fc89&amp;sub=WEB8af2d89057b12289f8f8b05079f7113d">http://note.youdao.com/noteshare?id=fd0b710c07ee0b207966324ec021fc89&amp;sub=WEB8af2d89057b12289f8f8b05079f7113d</a>
+            </p>
+        </article>
+    </div>
+</div>
+</body>
+</html>

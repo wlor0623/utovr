@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>UToVR 播放器剧场模式使用引导</title>
+    <meta name="keywords" content="全景视频，全景视频播放器，全景视频下载，全景视频片源，UtoVR片源，全景视频拍摄，全景视频拼合，全景视频制作">
+    <meta name="description" content="本站是国内最专业的全景视频平台。提供高清全景视频片源下载、在线浏览全景视频内容。也提供全景视频拍摄、全景视频拼合，全景视频制作，全景视频解决方案。">
+    <!--引入引导js 动态下载播放器-->
+    <script language="javascript" type="text/javascript" src="./player/plugin/sceneVideo/sceneVideo.js"></script>
+
+   <!-- <script language="javascript" type="text/javascript" src="http://192.168.0.170/public/javascript_dev/jquery-1.11.2.js"></script>
+    <script language="javascript" type="text/javascript" src="http://192.168.0.170/public/javascript_dev/UtoVRUtil.js"></script>
+    <script language="javascript" type="text/javascript" src="http://192.168.0.170/public/javascript_dev/UtoVRMatrix.js"></script>
+    <script language="javascript" type="text/javascript" src="http://192.168.0.170/public/javascript_dev/UtoVRPlayerGuide.js"></script>-->
+
+    <script language="javascript" type="text/javascript" src="./player/UtoVRPlayerGuide.js"></script>
+
+</head>
+<body>
+<!--播放器容器-->
+<div id="showContent">
+    <div id="showPano"></div>
+</div>
+</body>
+<script language="javascript" type="text/javascript">
+    //todo:这里是视频地址配置，测试版本用相对路径，正式版本改成完整的视频地址
+    /*播放器参数配置*/
+    var UTPlayerObj = null;
+    var UTSceneVideoObj = null;
+    var ImagePath = "./image/cinema.png";
+    var VideoPath = "./video/trailer.mp4";
+    var params = {
+        container: document.getElementById("showPano"),
+        name: "SceneViewer",
+        fullScreenDom: document.body,
+        useDefaultVideoBar: true,
+        playModel: "Cinema",
+        scenesArr: [{
+            sceneId: "剧场模式",
+            sceneVideoPath:VideoPath,
+            sceneImagePath: ImagePath,
+            sceneFilePath: ImagePath,
+            sceneType: "Image",
+            initFov: 100,
+            sceneModel: "Sphere",
+           // sceneModelPT:  [145, 25, 212, 25, 212, -10, 146, -10]
+        }],
+        initOverCallBack: function () {
+            UTPlayerObj = this;
+        },
+        loadedCallBack: function () {
+            !UTSceneVideoObj && (UTSceneVideoObj = new video3DClass(this, VideoPath));
+        },
+        drawWebGLCallBack: function () {
+            UTSceneVideoObj && UTSceneVideoObj.loopVideo();
+        }
+    };
+
+    window.onload = function(){
+        initLoad(params);
+    };
+</script>
+
+</html>
