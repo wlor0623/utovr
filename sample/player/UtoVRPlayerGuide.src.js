@@ -166,7 +166,7 @@
       , videoBarLib = jsRootPath + "/plugin/videoToolBar/js/video_toolbar.js"
       , iPhoneInlineVideoLib = jsRootPath + "/plugin/inlineVideo/inlineVideo.js"
       , gyroLib = jsRootPath + "/plugin/gyro/gyro.js"
-      , hlsLib ="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"|| jsRootPath + "/plugin/hls/hls.js";
+      , hlsLib = jsRootPath + "/plugin/hls/hls.js";
     var PTArr = [-35, 25, 35, 25, 35, -10, -35, -10];
     var initFov = 100;
     var initPan = 0;
@@ -590,13 +590,13 @@
     window.initHTML5Load = initHTML5Player;
     window.initFlashLoad = initFlashPlayer;
     window.UTLoadOver = function(callback) {
-        var UtoVR_Player_Lib = jsRootPath + "/UtoVRPlayer.js"
-          , UtoVR_Player_SWF = jsRootPath + "/UtoVRPlayer.swf"
-          , videoBarCss = jsRootPath + "/plugin/videoToolBar/style/videobar.css"
-          , videoBarLib = jsRootPath + "/plugin/videoToolBar/js/video_toolbar.js"
-          , iPhoneInlineVideoLib = jsRootPath + "/plugin/inlineVideo/inlineVideo.js"
-          , gyroLib = jsRootPath + "/plugin/gyro/gyro.js"
-          , hlsLib = jsRootPath + "/plugin/hls/hls.js";
+        var UtoVR_Player_Lib = jsRootPath + "/UtoVRPlayer.js.block"
+          , UtoVR_Player_SWF = jsRootPath + "/UtoVRPlayer.swf.block"
+          , videoBarCss = jsRootPath + "/plugin/videoToolBar/style/videobar.css.block"
+          , videoBarLib = jsRootPath + "/plugin/videoToolBar/js/video_toolbar.js.block"
+          , iPhoneInlineVideoLib = jsRootPath + "/plugin/inlineVideo/inlineVideo.js.block"
+          , gyroLib = jsRootPath + "/plugin/gyro/gyro.js.block"
+          , hlsLib = jsRootPath + "/plugin/hls/hls.js.block";
         var loadArr = [UtoVR_Player_Lib, videoBarLib];
         "ontouchstart"in window && loadArr.push(gyroLib);
         var isWhitelisted = /iPhone|iPod/i.test(navigator.userAgent) && !matchMedia("(-webkit-video-playable-inline)").matches;
