@@ -319,12 +319,12 @@ function() {
     var b = "iVBORw0KGgoAAAANSUhEUgAAAKAAAAAwCAMAAAChd4FcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA2UExURUxpcf///////////////////////////////////////////////////////////////////6Sl3sMAAAARdFJOUwBxEVAf8cDQL4BgsJE+oOEHuYIOlQAABNpJREFUWMPtmOmS4yoMRhGb2Jf3f9krAU5Ix512bs2PnqmoKpvB5ljLJxwhPvaxj33sY3+jhfbLAV28Suh672H7Df7ZxniLscwpKka/nVFizOOLjjHKq4TF/jA1q2lAgAWWaSFMfzZL86Pt3RBB1CL2jpOcvaB6r+12r/oqoO74mtCegPT8PeDth9um8BLYOwipdXsPUKSO+n8CBq3Bg14GXwBV6DsgObA3dmp+A5A9rmt9GWVemyKcM13V65yzllK2AaiENDOcZD5MQFnJeTRFFjrBOLIB6NmdQtBgGNkSOG1+DG++Xh9e85uktzgP0oKAdQvvAqR5dWY3HUxi+lSy6whQPsTB/OQ/24QcaW2tezWR7zgPQA64aTdAXsUDeF5MLUD6KBFxekcBuAnokQHVW4ClCB3W+uaVM/nu2wTkueoADMrbBCGTH6sTC5AmBzwUqXLKhcBqy+fzq1DGjBsme80HXbXhuVZ/IDS89AR0R9xmDoowK5WzeAHSAX0AypFsbcnFBFRXZSZTrBLOdjKr7mUKLkD2Sb15kBQxjXMTwBHivdLz0psDUAKEqzqoa0+uT6FvM9fDeTMc2ZMPQAYqXt9z8GuR7ID7netRxZeFutGq2a+bO3IXzmbiSOd2AN6cwh4sbCkDf8ACpIqzNIacPWm77JuAhSOF9YHinNAaU20WB6AIFhEnoIq1xlsfXoDrcmGJfD1y9j3AMJVttfLmygqLP3M2aa2ml+QvUrJUH0WST0K8A9KccgjnyMGp6dycLH95USAcJqBISYoPbsuk88n+kOokj0kMSO0By7IVYn0LsR5MdBQfqni3FwVCp2lfYn3qsuVpNsM5w46ovBiuFc3stsYuW4Bu2yzkyWTugDhsLM/2bQcZed/P7esGUY7mgdxXORFcWsIxdHDbSZQFaMj48saxqmNbe5mrOdgopN+hHcn0SDi3UaMeh2rAvYpTCPfNKsQvOaiCZbezHOW3iiTctm6XbCokx7hLfsvmBvjs/R0Qpy7garqXAd28ctCm4ne2tz3yzXAAtY3xJmkPyEJdzZPVoxmR/KhBVvXwh5nbukPVuJC+BZSrLiR09yufkuwRjGJ/JV9a2YI+uN/4xPm4Yay0m8v6N/G5s9IzWLx64U5qviqX6rUiNQYbhY2pehvpGMiWamouQSpUIKpA4v0EDUOpuaaCHkf3BBopVGs+AU2UgCO/EOG8QE4N6bEnnz49JVKPbNYXaQU216VEoUZV0jFWzhhEQPpMhWWErlNCpCNEy3yR9095DDakNp1Ixum53p5s3X+ws6jvgCCCSIMgLUBak/b7wilRYWic5mEZclAMSPNEM6w/SmneIwqg0zw9bogE9rmpXrPHqN8BEcx4WGXAdgf0vXLgxs5Usqp3iMDPtAzYGJrBWlOj6Sm6Be9Mk/4roHvXmFDq3YMax7O0mysdgM15y4+kd0ANI7sCrv2QWyV6AxQYgoMnpQv4jkWvtCD530OsBP8vswDNBJScZhkfQ6w2wIUe9AAdIRaAScCfkGLaTMe0FUnjv3Im4Egpl4TkjHdFqFEk6RhegI3gPJPQnfHgKBK6KwN/BlD5FCXVIoJWMQJEosgkHnqsH0uSVNjUr5PcZAb96OaqWJDOSJYZ79mLS2ZogkiShz//0H7sY/+O/QfydW8spbNp3AAAAABJRU5ErkJggg==";
     D(a, null, null, null, 1, b)
   }, window.initHTML5Load = D, window.initFlashLoad = z, window.UTLoadOver = function(a) {
-    var k, b = e + "/UtoVRPlayer.js",
-      d = e + "/plugin/videoToolBar/style/videobar.css",
-      f = e + "/plugin/videoToolBar/js/video_toolbar.js",
-      g = e + "/plugin/inlineVideo/inlineVideo.js",
-      h = e + "/plugin/gyro/gyro.js",
-      i = e + "/plugin/hls/hls.js",
+    var k, b = "https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/UtoVRPlayer.js",
+      d =  "https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/plugin/videoToolBar/style/videobar.css",
+      f = "https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/plugin/videoToolBar/js/video_toolbar.js",
+      g = "https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/plugin/inlineVideo/inlineVideo.js",
+      h ="https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/plugin/gyro/gyro.js",
+      i = "https://cdn.jsdelivr.net/gh/wlor0623/utovr@master/sample/libsrc/plugin/hls/hls.js",
       j = [b, f];
     "ontouchstart" in window && j.push(h), k = /iPhone|iPod/i.test(navigator.userAgent) && !matchMedia("(-webkit-video-playable-inline)")
       .matches, k && j.push(g), j.push(i), v([d]), u(j, function() {
